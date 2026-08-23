@@ -10,7 +10,7 @@ import confetti from "canvas-confetti";
 import { INITIAL_PROJECTS } from "../../data/projectsData";
 import { SIMPLE_GIS_BLOCKS, WORKFLOW_STAGES, getSharedWorkflowStages, saveSharedWorkflowStages, saveSharedAuditLog } from "../../data/gisAndWorkflowData";
 import { getProjectWorkflow, dispatchApproveStage, dispatchRequestClarification, dispatchRejectStage } from "../../data/workflowEngine";
-import brandLogo from "../../assets/Logo.jpg";
+import brandLogo from "../../assets/logo.jpg";
 
 // Comprehensive Stage-Specific Data for Sequential Workflow Handover
 const STAGE_CONFIG = {

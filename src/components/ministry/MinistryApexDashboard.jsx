@@ -7,7 +7,7 @@ import {
 import confetti from "canvas-confetti";
 import { INITIAL_PROJECTS } from "../../data/projectsData";
 import { getProjectWorkflow, calculateWorkflowMetrics, dispatchApproveStage, addActivityLog } from "../../data/workflowEngine";
-import brandLogo from "../../assets/Logo.jpg";
+import brandLogo from "../../assets/logo.jpg";
 
 export default function MinistryApexDashboard({ user, onLogout }) {
   const [activeView, setActiveView] = useState("overview"); // 'overview' | 'project_detail'

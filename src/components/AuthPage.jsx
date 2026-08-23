@@ -4,7 +4,7 @@ import SignUpForm from "./SignUpForm";
 import MinistryModal from "./MinistryModal";
 import RegionalOfficerModal from "./RegionalOfficerModal";
 import UserDashboardPreview from "./UserDashboardPreview";
-import brandLogo from "../assets/Logo.jpg";
+import brandLogo from "../assets/logo.jpg";
 
 export default function AuthPage({ currentUser, onLogin, onLogout }) {
   const [activeTab, setActiveTab] = useState("login"); // 'login' | 'signup'

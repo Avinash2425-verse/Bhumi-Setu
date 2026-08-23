@@ -3,7 +3,7 @@ import { Search, Filter, Layers, MapPin, Building2, CheckCircle2, Clock, AlertTr
 import { INITIAL_PROJECTS } from "../../data/projectsData";
 import ProjectAuthCodeModal from "./ProjectAuthCodeModal";
 import ProjectWorkspaceView from "./ProjectWorkspaceView";
-import brandLogo from "../../assets/Logo.jpg";
+import brandLogo from "../../assets/logo.jpg";
 
 export default function AgencyDashboard({ user, onLogout }) {
   const [projects, setProjects] = useState(INITIAL_PROJECTS);

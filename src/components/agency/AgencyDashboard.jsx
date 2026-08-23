@@ -3,6 +3,7 @@ import { Search, Filter, Layers, MapPin, Building2, CheckCircle2, Clock, AlertTr
 import { INITIAL_PROJECTS } from "../../data/projectsData";
 import ProjectAuthCodeModal from "./ProjectAuthCodeModal";
 import ProjectWorkspaceView from "./ProjectWorkspaceView";
+import brandLogo from "../../assets/Logo.jpg";
 
 export default function AgencyDashboard({ user, onLogout }) {
   const [projects, setProjects] = useState(INITIAL_PROJECTS);
@@ -154,7 +155,18 @@ export default function AgencyDashboard({ user, onLogout }) {
         boxShadow: "var(--shadow-sm)"
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <span style={{ fontSize: "24px" }}>🏛️</span>
+          <img
+            src={brandLogo}
+            alt="Bhoomi Setu Logo"
+            style={{
+              height: "36px",
+              width: "auto",
+              objectFit: "contain",
+              borderRadius: "6px",
+              border: "1px solid rgba(226, 232, 240, 0.8)",
+              background: "#ffffff"
+            }}
+          />
           <div>
             <div style={{ display: "flex", alignItems: "baseline", gap: "8px" }}>
               <span style={{ fontSize: "18px", fontWeight: "700", color: "var(--royal-900)", fontFamily: "var(--font-heading)" }}>

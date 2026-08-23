@@ -4,6 +4,7 @@ import SignUpForm from "./SignUpForm";
 import MinistryModal from "./MinistryModal";
 import RegionalOfficerModal from "./RegionalOfficerModal";
 import UserDashboardPreview from "./UserDashboardPreview";
+import brandLogo from "../assets/Logo.jpg";
 
 export default function AuthPage({ currentUser, onLogin, onLogout }) {
   const [activeTab, setActiveTab] = useState("login"); // 'login' | 'signup'
@@ -23,8 +24,19 @@ export default function AuthPage({ currentUser, onLogin, onLogout }) {
           justifyContent: "space-between",
           alignItems: "center"
         }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <span style={{ fontSize: "22px" }}>🏛️</span>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+            <img
+              src={brandLogo}
+              alt="Bhoomi Setu Logo"
+              style={{
+                height: "38px",
+                width: "auto",
+                objectFit: "contain",
+                borderRadius: "6px",
+                border: "1px solid rgba(226, 232, 240, 0.8)",
+                background: "#ffffff"
+              }}
+            />
             <div>
               <div style={{ fontSize: "16px", fontWeight: "800", color: "var(--royal-900)", fontFamily: "var(--font-heading)" }}>
                 BHOOMI SETU <span style={{ color: "var(--accent-amber)", fontWeight: "700" }}>भूमि-सेतु</span>
@@ -51,6 +63,69 @@ export default function AuthPage({ currentUser, onLogin, onLogout }) {
     <div className="ocean-bg" style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       {/* Top Tricolor Strip */}
       <div className="gov-strip" />
+
+      {/* Top Header with Logo in Top Left Corner */}
+      <header style={{
+        padding: "12px 32px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        background: "rgba(255, 255, 255, 0.92)",
+        backdropFilter: "blur(12px)",
+        borderBottom: "1px solid var(--border-light)",
+        boxShadow: "0 2px 8px rgba(15, 23, 42, 0.04)"
+      }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
+          <img
+            src={brandLogo}
+            alt="Bhoomi Setu Official Logo"
+            style={{
+              height: "44px",
+              width: "auto",
+              maxHeight: "44px",
+              objectFit: "contain",
+              borderRadius: "8px",
+              boxShadow: "0 2px 6px rgba(0, 0, 0, 0.06)",
+              border: "1px solid rgba(226, 232, 240, 0.9)",
+              background: "#ffffff"
+            }}
+          />
+          <div>
+            <div style={{
+              fontSize: "17px",
+              fontWeight: "800",
+              color: "var(--royal-900)",
+              fontFamily: "var(--font-heading)",
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              letterSpacing: "-0.01em"
+            }}>
+              BHOOMI SETU <span style={{ color: "var(--accent-amber)", fontWeight: "700" }}>भूमि-सेतु</span>
+            </div>
+            <div style={{ fontSize: "11.5px", color: "var(--text-muted)", fontWeight: "500" }}>
+              National Land Acquisition & Statutory Monitoring Platform • PM Gati Shakti
+            </div>
+          </div>
+        </div>
+
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <div style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "6px",
+            padding: "5px 12px",
+            background: "var(--royal-50)",
+            border: "1px solid var(--royal-100)",
+            borderRadius: "var(--radius-full)",
+            fontSize: "11.5px",
+            fontWeight: "700",
+            color: "var(--royal-700)"
+          }}>
+            <span>🇮🇳</span> MoRTH & State CALA Portal
+          </div>
+        </div>
+      </header>
 
       {/* Main Content Area */}
       <div style={{
@@ -93,26 +168,40 @@ export default function AuthPage({ currentUser, onLogin, onLogout }) {
               </span>
             </div>
 
-            {/* Web Page Name: BHOOMI SETU */}
+            {/* Web Page Name: BHOOMI SETU with adjacent Logo */}
             <div>
-              <div style={{ display: "flex", alignItems: "baseline", gap: "12px", flexWrap: "wrap" }}>
-                <h1 style={{
-                  fontSize: "44px",
-                  fontWeight: "700",
-                  color: "var(--royal-900)",
-                  fontFamily: "var(--font-heading)",
-                  lineHeight: "1.15"
-                }}>
-                  Bhoomi Setu
-                </h1>
-                <span style={{
-                  fontSize: "26px",
-                  fontWeight: "600",
-                  color: "var(--accent-amber)",
-                  fontFamily: "var(--font-heading)"
-                }}>
-                  भूमि-सेतु
-                </span>
+              <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap", marginBottom: "4px" }}>
+                <img
+                  src={brandLogo}
+                  alt="Bhoomi Setu Logo"
+                  style={{
+                    height: "54px",
+                    width: "auto",
+                    borderRadius: "10px",
+                    boxShadow: "0 3px 10px rgba(0,0,0,0.08)",
+                    border: "1px solid rgba(226, 232, 240, 0.9)",
+                    background: "#ffffff"
+                  }}
+                />
+                <div style={{ display: "flex", alignItems: "baseline", gap: "12px", flexWrap: "wrap" }}>
+                  <h1 style={{
+                    fontSize: "42px",
+                    fontWeight: "700",
+                    color: "var(--royal-900)",
+                    fontFamily: "var(--font-heading)",
+                    lineHeight: "1.15"
+                  }}>
+                    Bhoomi Setu
+                  </h1>
+                  <span style={{
+                    fontSize: "24px",
+                    fontWeight: "600",
+                    color: "var(--accent-amber)",
+                    fontFamily: "var(--font-heading)"
+                  }}>
+                    भूमि-सेतु
+                  </span>
+                </div>
               </div>
 
               {/* Description Lines */}

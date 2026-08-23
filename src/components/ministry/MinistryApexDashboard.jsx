@@ -7,6 +7,7 @@ import {
 import confetti from "canvas-confetti";
 import { INITIAL_PROJECTS } from "../../data/projectsData";
 import { getProjectWorkflow, calculateWorkflowMetrics, dispatchApproveStage, addActivityLog } from "../../data/workflowEngine";
+import brandLogo from "../../assets/Logo.jpg";
 
 export default function MinistryApexDashboard({ user, onLogout }) {
   const [activeView, setActiveView] = useState("overview"); // 'overview' | 'project_detail'
@@ -199,19 +200,18 @@ export default function MinistryApexDashboard({ user, onLogout }) {
         boxShadow: "var(--shadow-sm)"
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <div style={{
-            width: "40px",
-            height: "40px",
-            borderRadius: "var(--radius-sm)",
-            background: "rgba(217, 119, 6, 0.1)",
-            border: "1.5px solid rgba(217, 119, 6, 0.3)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            color: "var(--accent-amber)"
-          }}>
-            <ShieldAlert size={22} />
-          </div>
+          <img
+            src={brandLogo}
+            alt="Bhoomi Setu Logo"
+            style={{
+              height: "38px",
+              width: "auto",
+              objectFit: "contain",
+              borderRadius: "6px",
+              border: "1.5px solid rgba(217, 119, 6, 0.3)",
+              background: "#ffffff"
+            }}
+          />
           <div>
             <div style={{ display: "flex", alignItems: "baseline", gap: "8px" }}>
               <span style={{ fontSize: "18px", fontWeight: "800", color: "var(--royal-900)", fontFamily: "var(--font-heading)" }}>
@@ -230,7 +230,7 @@ export default function MinistryApexDashboard({ user, onLogout }) {
                 borderRadius: "var(--radius-full)",
                 textTransform: "uppercase"
               }}>
-                National Oversight 🏛️
+                National Oversight
               </span>
             </div>
             <div style={{ fontSize: "11px", color: "var(--text-muted)" }}>

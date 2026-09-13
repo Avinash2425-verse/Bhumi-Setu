@@ -5,7 +5,7 @@ A full-stack, enterprise-grade government portal connecting the **Ministry Apex 
 
 ---
 
-#.# 🚀 Live Demo
+## 🚀 Live Demo
 
 Check out the live deployment here: **[Bhumi Setu](https://bhumi-setu.onrender.com)**
 

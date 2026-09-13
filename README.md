@@ -5,6 +5,10 @@ A full-stack, enterprise-grade government portal connecting the **Ministry Apex 
 
 ---
 
+#.# 🚀 Live Demo
+
+Check out the live deployment here: **[Bhumi Setu](https://bhumi-setu.onrender.com)**
+
 ## 🚀 Quick Start: Running Locally
 
 ### 1. Install Dependencies

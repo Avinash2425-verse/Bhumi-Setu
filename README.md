@@ -90,3 +90,11 @@ docker run -p 5000:5000 -e MONGO_URI="mongodb+srv://avinash00000724_db_user:5Bzv
 - `npm run build`: Compiles and bundles the React frontend into `dist/`.
 - `npm start`: Starts the production Express server (serves API + `dist/` frontend).
 - `npm run lint`: Runs Oxlint code inspection.
+
+---
+
+## 🛠 Tech Stack
+Frontend : HTML/CSS/Javascript/React
+Backend : Node.js/Express
+Database : MongoDB
+Deployment : Vercel/Render
